@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SchematicTopology Version="2.5" Seed="1" Grid="25">
-    <Block Id="1" ForeignId="1084288585" Class="MWSSCHEM" ImageIndex="1">
-        <Size Height="392" Width="512"/>
+    <Block Id="1" ForeignId="14820997" Class="MWSSCHEM">
+        <Size Height="150" Width="150"/>
         <Pins Distribution="TwoSidesDownward">
             <Pin Index="0" Port="0" BlockPosition="Left">
                 <Label>Zmin<LabelAppearance VerticalMargin="0" RightMargin="0" Color="#000000" LeftMargin="0" Placement="Inside" HorizontalMargin="0" Flags="Right Top">
@@ -20,8 +20,8 @@
                 <Port Name="Zmax" Label=""/>
             </Ports>
         </Pins>
-        <Image IconPosition="TopRight" FileName="Image/Model.dib" Scale="AutoFit">
-            <Size Height="392" Width="512"/>
+        <Image IconPosition="TopRight" FileName="../../../../../../../AppData/Local/Temp/CSTDE1/Temp/DE4/Untitled_0/Model/3D/Model.dib" Scale="AutoFit">
+            <Size Height="-1" Width="-1"/>
         </Image>
         <Pos X="100" Y="0"/>
         <ToolTip>CST MICROWAVE STUDIO schematic block MWSSCHEM1</ToolTip>
