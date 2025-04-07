@@ -1,0 +1,13 @@
+{
+   "Author": "tahas",
+   "Comment": "",
+   "Last Problem Type": "High Frequency",
+   "Last Solver Type": "HF Frequency Domain",
+   "Last Solver Type Abb": "f",
+   "Mesh Cells": "49,986",
+   "Mesh Type": "Tetrahedral",
+   "Modeler Unique ID": "5:19.cst?74aa1b0837b8d28e487fdd5a03d28a37?6135:numberofparameters=0::fport=zmin>fmode=1>zre=0>zim=0?fport=zmax>fmode=1>zre=0>zim=0",
+   "ProjectVersion": "'# MWS Version: Version 2024.1 - Oct 16 2023 - ACIS 33.0.1 -",
+   "Results": "Frequency Domain: S-Parameter",
+   "Version": "3"
+}

@@ -1,0 +1,436 @@
+{
+    "general": {
+        "version": "2024.1",
+        "date": "2023-10-16",
+        "acis": "33.0.1",
+        "buildnumber": "20231016",
+        "project_type": "MWS",
+        "length": "mm",
+        "frequency": {
+            "unit": "GHz",
+            "minimum": "20",
+            "maximum": "32",
+            "minimum_expr": "20.0",
+            "maximum_expr": "32.0"
+        },
+        "time": "s",
+        "created": "2024.1|33.0.1|20231016"
+    },
+    "history": [
+        {
+            "caption": "define units",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Units",
+                ".SetUnit \"Length\", \"mm\"",
+                ".SetUnit \"Temperature\", \"K\"",
+                ".SetUnit \"Voltage\", \"V\"",
+                ".SetUnit \"Current\", \"A\"",
+                ".SetUnit \"Resistance\", \"Ohm\"",
+                ".SetUnit \"Conductance\", \"S\"",
+                ".SetUnit \"Capacitance\", \"pF\"",
+                ".SetUnit \"Inductance\", \"nH\"",
+                ".SetUnit \"Frequency\", \"GHz\"",
+                ".SetUnit \"Time\", \"s\"",
+                ".SetResultUnit \"frequency\", \"frequency\", \"\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define material: FR4 (Lossy)",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Material",
+                ".Reset",
+                ".Name \"FR4 (Lossy)\"",
+                ".Type \"Normal\"",
+                ".Epsilon \"4.3\"",
+                ".Mue \"1.0\"",
+                ".TanD \"0.025\"",
+                ".TanDFreq \"0.0\"",
+                ".TanDGiven \"True\"",
+                ".TanDModel \"ConstTanD\"",
+                ".Sigma \"0.0\"",
+                ".TanDM \"0.0\"",
+                ".TanDMFreq \"0.0\"",
+                ".TanDMGiven \"False\"",
+                ".TanDMModel \"ConstTanD\"",
+                ".SigmaM \"0.0\"",
+                ".Colour \"0.940000\", \"0.820000\", \"0.760000\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define material: Copper (pure)",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Material",
+                ".Reset",
+                ".Name \"Copper (pure)\"",
+                ".Type \"Normal\"",
+                ".Epsilon \"1.0\"",
+                ".Mue \"1.0\"",
+                ".TanD \"0.0\"",
+                ".TanDFreq \"0.0\"",
+                ".TanDGiven \"False\"",
+                ".TanDModel \"ConstTanD\"",
+                ".Sigma \"59600000.0\"",
+                ".TanDM \"0.0\"",
+                ".TanDMFreq \"0.0\"",
+                ".TanDMGiven \"False\"",
+                ".TanDMModel \"ConstTanD\"",
+                ".SigmaM \"0.0\"",
+                ".Colour \"0.850000\", \"0.550000\", \"0.200000\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: Substrate",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                ".Reset",
+                ".Name \"Substrate\"",
+                ".Component \"component1\"",
+                ".Material \"FR4 (Lossy)\"",
+                ".XRange \"-8.0\", \"8.0\"",
+                ".YRange \"-8.0\", \"8.0\"",
+                ".ZRange \"-1.6\", \"0.0\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: Outer Box",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                ".Reset",
+                ".Name \"Outer Box\"",
+                ".Component \"component1\"",
+                ".Material \"Copper (pure)\"",
+                ".XRange \"-7.75\", \"7.75\"",
+                ".YRange \"-7.75\", \"7.75\"",
+                ".ZRange \"0.0\", \"0.035\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: Cut1",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                ".Reset",
+                ".Name \"Cut1\"",
+                ".Component \"component1\"",
+                ".Material \"Copper (pure)\"",
+                ".XRange \"-6.75\", \"6.75\"",
+                ".YRange \"-6.75\", \"6.75\"",
+                ".ZRange \"0.0\", \"0.035\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:Outer Box, component1:Cut1",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:Outer Box\", \"component1:Cut1\""
+            ]
+        },
+        {
+            "caption": "define brick: Cut2",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                ".Reset",
+                ".Name \"Cut2\"",
+                ".Component \"component1\"",
+                ".Material \"Copper (pure)\"",
+                ".XRange \"-0.3\", \"0.3\"",
+                ".YRange \"-8.05\", \"8.05\"",
+                ".ZRange \"0.0\", \"0.035\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:Outer Box, component1:Cut2",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:Outer Box\", \"component1:Cut2\""
+            ]
+        },
+        {
+            "caption": "define brick: Cut3",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                ".Reset",
+                ".Name \"Cut3\"",
+                ".Component \"component1\"",
+                ".Material \"Copper (pure)\"",
+                ".XRange \"-8.05\", \"8.05\"",
+                ".YRange \"-0.3\", \"0.3\"",
+                ".ZRange \"0.0\", \"0.035\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:Outer Box, component1:Cut3",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:Outer Box\", \"component1:Cut3\""
+            ]
+        },
+        {
+            "caption": "define cylinder: Outer Circle",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Cylinder",
+                ".Reset",
+                ".Name \"Outer Circle\"",
+                ".Component \"component1\"",
+                ".Material \"Copper (pure)\"",
+                ".OuterRadius \"6.0\"",
+                ".InnerRadius \"5.0\"",
+                ".Axis \"z\"",
+                ".Zrange \"0.0\", \"0.035\"",
+                ".Xcenter \"0.0\"",
+                ".Ycenter \"0.0\"",
+                ".Segments \"0\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: Cut4",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                ".Reset",
+                ".Name \"Cut4\"",
+                ".Component \"component1\"",
+                ".Material \"Copper (pure)\"",
+                ".XRange \"-0.3\", \"0.3\"",
+                ".YRange \"-6.0\", \"6.0\"",
+                ".ZRange \"0.0\", \"0.035\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:Outer Circle, component1:Cut4",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:Outer Circle\", \"component1:Cut4\""
+            ]
+        },
+        {
+            "caption": "define brick: Cut5",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                ".Reset",
+                ".Name \"Cut5\"",
+                ".Component \"component1\"",
+                ".Material \"Copper (pure)\"",
+                ".XRange \"-6.0\", \"6.0\"",
+                ".YRange \"-0.3\", \"0.3\"",
+                ".ZRange \"0.0\", \"0.035\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:Outer Circle, component1:Cut5",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:Outer Circle\", \"component1:Cut5\""
+            ]
+        },
+        {
+            "caption": "define brick: Inner Box",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                ".Reset",
+                ".Name \"Inner Box\"",
+                ".Component \"component1\"",
+                ".Material \"Copper (pure)\"",
+                ".XRange \"-3.0\", \"3.0\"",
+                ".YRange \"-3.0\", \"3.0\"",
+                ".ZRange \"0.0\", \"0.035\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define brick: Cut6",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Brick",
+                ".Reset",
+                ".Name \"Cut6\"",
+                ".Component \"component1\"",
+                ".Material \"Copper (pure)\"",
+                ".XRange \"-0.3\", \"0.3\"",
+                ".YRange \"-3.0\", \"3.0\"",
+                ".ZRange \"0.0\", \"0.035\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:Inner Box, component1:Cut6",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:Inner Box\", \"component1:Cut6\""
+            ]
+        },
+        {
+            "caption": "define cylinder: Cut7",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Cylinder",
+                ".Reset",
+                ".Name \"Cut7\"",
+                ".Component \"component1\"",
+                ".Material \"Copper (pure)\"",
+                ".OuterRadius \"2.5\"",
+                ".InnerRadius \"2.0\"",
+                ".Axis \"z\"",
+                ".Zrange \"0.0\", \"0.035\"",
+                ".Xcenter \"0.0\"",
+                ".Ycenter \"0.0\"",
+                ".Segments \"0\"",
+                ".Create",
+                "End With"
+            ]
+        },
+        {
+            "caption": "boolean subtract shapes: component1:Inner Box, component1:Cut7",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solid.Subtract \"component1:Inner Box\", \"component1:Cut7\""
+            ]
+        },
+        {
+            "caption": "define frequency range",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "Solver.FrequencyRange \"20.0\", \"32.0\""
+            ]
+        },
+        {
+            "caption": "define boundaries",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With Boundary",
+                ".Xmin \"unit cell\"",
+                ".Xmax \"unit cell\"",
+                ".Ymin \"unit cell\"",
+                ".Ymax \"unit cell\"",
+                ".Zmin \"expanded open\"",
+                ".Zmax \"expanded open\"",
+                ".ApplyInAllDirections \"False\"",
+                ".OpenAddSpaceFactor \"0.5\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "define Floquet Port boundaries",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "With FloquetPort",
+                ".Reset",
+                ".SetPolarizationIndependentOfScanAnglePhi \"0.0\", \"False\"",
+                ".SetSortCode \"+beta/pw\"",
+                ".SetCustomizedListFlag \"False\"",
+                ".Port \"Zmin\"",
+                ".SetNumberOfModesConsidered \"1\"",
+                ".SetDistanceToReferencePlane \"0.0\"",
+                ".SetUseCircularPolarization \"False\"",
+                ".Port \"Zmax\"",
+                ".SetNumberOfModesConsidered \"1\"",
+                ".SetDistanceToReferencePlane \"0.0\"",
+                ".SetUseCircularPolarization \"False\"",
+                "End With",
+                "With Boundary",
+                ".SetPeriodicBoundaryAngles \"0.0\", \"0.0\"",
+                ".SetPeriodicBoundaryAnglesDirection \"outward\"",
+                "End With"
+            ]
+        },
+        {
+            "caption": "change solver type",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "ChangeSolverType \"HF Frequency Domain\""
+            ]
+        },
+        {
+            "caption": "set stimulation",
+            "version": "2024.1|33.0.1|20231016",
+            "hidden": false,
+            "type": "vba",
+            "code": [
+                "FDSolver.Stimulation \"Zmin\", \"TE(0,0)\""
+            ]
+        }
+    ]
+}

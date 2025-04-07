@@ -1,0 +1,22 @@
+Number of suspicious elements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+8
+
+Element dimension
+^^^^^^^^^^^^^^^^^
+2
+
+Quality measure output (0...no, 1...yes)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0
+
+Element ID, element quality (if used; 0: worst, 1: best)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3985
+4034
+4036
+4038
+4203
+4224
+4226
+4237
