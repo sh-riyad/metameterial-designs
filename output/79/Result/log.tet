@@ -1,0 +1,136 @@
+[11:39:36] -------- TetMesher Log --------
+[11:39:36] Build Number: 20231016; ID: 2024.1 Release from 2023-10-16 (change 1181985); Date: 2023-10-16; ACIS version: 33.0.1, SPAresabs & SPAresnor: 1e-06, 1e-10; Problem class: High Frequency
+[11:39:36] Temporary directory: "C:\Users\tahas\AppData\Local\Temp\CSTDE1\Temp\DE2\Untitled_1\Temp\1-temp.tet"
+[11:39:36] - Reading information
+[11:39:36] - Building single body
+[11:39:36] Found 94 faces.
+[11:39:36] Choosing Advanced Boolean Loop...
+[11:39:36] Volume Attributes enabled
+[11:39:36] Attaching Volume Attributes
+[11:39:36] Sorted out 3 special bodies.
+[11:39:36] Processing 13 entities.
+[11:39:36] Queue Size: 1
+[11:39:36] Combining solid component1:Inner Box and solid component1:Inner Box (Pair #1 out of 6)
+[11:39:36] Combining solid component1:Inner Box and solid component1:Inner Box (Pair #2 out of 6)
+[11:39:36] Combining solid component1:Outer Circle and solid component1:Outer Circle (Pair #3 out of 6)
+[11:39:36] Combining solid component1:Outer Circle and solid component1:Outer Circle (Pair #4 out of 6)
+[11:39:36] Combining solid component1:Outer Box and solid component1:Outer Box (Pair #5 out of 6)
+[11:39:36] Combining solid component1:Outer Box and solid component1:Outer Box (Pair #6 out of 6)
+[11:39:36] Processing 7 entities.
+[11:39:36] Queue Size: 1
+[11:39:36] Combining Compound Body and Compound Body (Pair #1 out of 3)
+[11:39:36] Combining Compound Body and Compound Body (Pair #2 out of 3)
+[11:39:36] Adding Compound Body to Compound Body (Pair #3 out of 3)
+[11:39:36] Processing 4 entities.
+[11:39:36] Queue Size: 1
+[11:39:36] Adding Compound Body to Compound Body (Pair #1 out of 2)
+[11:39:36] Adding Compound Body to solid component1:Substrate (Pair #2 out of 2)
+[11:39:36] Processing 2 entities.
+[11:39:36] Queue Size: 1
+[11:39:36] Adding Compound Body to Compound Body (Pair #1 out of 1)
+[11:39:36] Exiting Boolean Unite Module.
+[11:39:36] Added Compound Body (ID: 253, 175, 136, 214, 346, 292, 319, 373, 97, 58, 28, 43, 400) to model
+[11:39:36] Added background material (ID: 1) to model
+[11:39:36] Added waveguide port wavequide port (Floquet) at Zmin (ID: 427) to model
+[11:39:36] Added waveguide port wavequide port (Floquet) at Zmax (ID: 437) to model
+[11:39:36] - Storing model cells
+[11:39:36] [CADSurf] cad_add_face_multiple_periodicity_with_transformation_function
+[11:39:37] [CADSurf] fid1: 330, 331, 420, fid2: 325, 326, 415, 
+[11:39:37] [CADSurf] cad_add_face_multiple_periodicity_with_transformation_function
+[11:39:37] [CADSurf] fid1: 327, 328, 417, fid2: 329, 332, 418, 
+[11:39:37] [CADSurf] - Mesh sizes: global mesh size near to model = 1.6000000000000001e+00
+              min requested = 1.6000000000000001e+00
+              max requested = 3.3973300239219033e+00
+[11:39:37] [CADSurf] MeshGems Version: MeshGems-Core 2.15-1
+[11:39:37] [CADSurf] === Begin: PreCAD-related parameters ===
+[11:39:37] [CADSurf] == CADSurf Parameters == 
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "use_precad",  "yes")
+[11:39:37] [CADSurf] Bounding box diagonal = 2.3806796210239181e+01
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "remove_nano_edges",  "0")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "discard_input_topology",  "0")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "process_3d_topology",  "0")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "discard_input_2d_topology",  "0")
+[11:39:37] [CADSurf] Default periodic tolerance (1e-4*diag) = 2.3806796210239182e-03
+[11:39:37] [CADSurf] Minimum periodic tolerance = 1.0000000000000001e-05
+[11:39:37] [CADSurf] Setting it to max( 1.0000000000000001e-05, 2.3806796210239182e-03 )
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "periodic_tolerance",  "0.0023806796210239182")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "remove_duplicate_cad_faces",  "0")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_uv_edges",  "0")
+[11:39:37] [CADSurf] === End: PreCAD-related parameters ===
+[11:39:37] [CADSurf] ==
+[11:39:37] [CADSurf] == CADSurf Parameters == 
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "verbose",  "3")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "geometric_size_mode",  "local")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "physical_size_mode",  "local")
+[11:39:37] [CADSurf] 	 Max user size    = 3.3973300239219033e+00
+[11:39:37] [CADSurf] 	 Global size near = 1.6000000000000001e+00
+[11:39:37] [CADSurf] 	 Global size far  = 3.3973300239219033e+00
+[11:39:37] [CADSurf] 	 Upper size bound = 3.3973300239219033e+00
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "max_size",  "3.3973300239219033")
+[11:39:37] [CADSurf] 	Calculating min. mesh size for CADSurf...
+[11:39:37] [CADSurf] 	Diagonal of model + background box: 2.3806796210239181e+01
+[11:39:37] [CADSurf] 	Min. mesh size by diagonal (1e-3 x diagonal): 2.3806796210239182e-02
+[11:39:37] [CADSurf] 	Diagonal of model: 2.2686410579904436e+01
+[11:39:37] [CADSurf] 	Min. mesh size of model: 1.6000000000000001e+00
+[11:39:37] [CADSurf] 	Max. cell defined by user (near to model): 1.6000000000000001e+00
+[11:39:37] [CADSurf] 	Min. cell defined by user: 0.0000000000000000e+00
+[11:39:37] [CADSurf] 	Min. cell used for calculation: 1.6000000000000000e-02
+[11:39:37] [CADSurf] 	Note: min. mesh size by diagonal is too large, consider using (0.01 x max. cell = 1.6000000000000000e-02)
+[11:39:37] [CADSurf] Geometric refinement uses "min_size" setting.
+[11:39:37] [CADSurf] CADSurf "min_size" is set to min. cell: 1.6000000000000000e-02
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "min_size",  "0.016")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "max_number_of_points_per_patch",  "0")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "element_generation",  "local")
+[11:39:37] [CADSurf] Setting Triangle as default element type
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "gradation",  "1.5")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "volume_gradation",  "2")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "patch_independent",  "0")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "remove_tiny_edges",  "0")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "optimise_tiny_edges",  "0")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "tiny_edge_respect_geometry",  "1")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "CheckWellDefined",  "8")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic",  "1")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "anisotropic_ratio",  "5")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "correct_surface_intersections",  "1")
+[11:39:37] [CADSurf] meshgems_cadsurf_set_param(css, "intersection_processing_max_cost",  "15")
+[11:39:37] [CADSurf] ==
+[11:39:37] [CADSurf] Status: OK
+[11:39:37] [CADSurf] Number of intersecting edges: 0, total edge count: 558
+[11:39:37] [CADSurf] Number of intersecting faces: 0
+[11:39:37] [CADSurf] - Mesh stats: N=641, E=558, T=1511, Q=0
+[11:39:37] [CADSurf] Testing watertightness
+[11:39:37] [CADSurf] - OK
+[11:39:37] Creating volume mesh from surface mesh
+[11:39:37] [SrfToVol] Volume meshing: 6 threads will be allocated
+[11:39:37] [SrfToVol] Running CVM
+[11:39:37] [SrfToVol] Surface to volume mesh: verifying input data
+[11:39:37] [SrfToVol] 
+[11:39:37] [SrfToVol] Generate volume mesh for 15 subdomains using 6 threads 
+ 
+[11:39:37] [SrfToVol] Assembling volume mesh
+[11:39:37] [SrfToVol] Volume mesh generated - Status = ok
+[11:39:37] [SrfToVol] - Volume mesh stats: Nb nodes = 753, Nb edges = 558, Nb surface elements = 1511, Nb tets = 3809
+[11:39:37] Creating mesh topology.
+[11:39:37] Using mesh topology.
+[11:39:37] Writing ACIS sat.tet file because UIDs may have changed.
+[11:39:37] Using generalized mesh output routines.
+[11:39:37] Writing Bc file
+[11:39:37] Running model geometry simplification... 
+[11:39:37] Model geometry simplification: 0 seconds
+[11:39:37] Writing topot.tet...
+[11:39:37] Done (topot.tet)
+[11:39:37] Writing moegeom.tet ...
+[11:39:37] Done (moegeom.tet) 
+[11:39:37] Creating volume mesh from surface mesh - done
+[11:39:37] Writing gex file for volume mesh
+[11:39:37] Mesh curving:
+[11:39:37]     available cores:   6
+[11:39:37]     number of threads: 6
+[11:39:37] Curving elements
+[11:39:38]  Curve elements, order = 3
+
+[11:39:38] 
+#### Feedback Report Begins ####
+#### Feedback Report Ends ####
+
+[11:39:38] Done
