@@ -1,0 +1,818 @@
+2025-04-13 23:49:26   *** Warning ***
+
+                      Electric isotropic material [Copper (pure)] has a very high conductivity for
+                      the given mesh. Depending on your configuration it may be better to use a lossy
+                      metal type for this material. More...
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:26   In order to get an optimal performance, hyperthreading is ignored for parallel
+                      computations.
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:28   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  GHz
+                        Time:       s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:28   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: unit cell
+                        Xmax: unit cell
+
+                        Ymin: unit cell
+                        Ymax: unit cell
+
+                        Zmin: expanded open
+                        Zmax: expanded open
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:28   Order settings: 
+
+                        Solver order   : 2nd (constant)
+                        Curved elements: up to order 3 (automatic)
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:28   An iterative solver will be used first.
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:28     Mesh time                :	2 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:28   
+                      ================================================================================
+                      Frequency Domain Solver calculation cycle started
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:28   Solver started at: 2025-04-13 23:49:28 +0600
+
+                        Module:  Frequency Domain: S-Parameter (Win 64)
+                        Version: 2024.1 Release from 2023-10-16 (change 1181985)
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:28   The low frequency stabilization is not applied to periodic problems.
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:28     Calculation 1 of 1 (Frequency: 32 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:28   The wavelength based mesh refinement has been applied to 5.6% of all mesh edges.
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:29   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:29   Adaptive mesh refinement pass 1
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:35   *** Warning ***
+
+2025-04-13 23:49:35   Detected possible stagnation of the iterative solver (3.488513e-02 after 250 iterations.)
+                      Please consider aborting the solver run, and check your simulation setup.  More...
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:41   *** Warning ***
+
+2025-04-13 23:49:41   The solver stopped because the maximum number of iterations (500, used for automatic solver choice) has been reached.
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:41   Solving again, but with the direct solver. Please consider forcing the direct solver in the solver special settings, and
+                      check your simulation setup (for instance source and material definitions.)
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:41     Matrix setup time        :	0 s
+                        Degrees of freedom       :	36664
+                        Number of mesh cells     :	5590
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	7.79586e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:41   26% of all mesh edges seem to be longer than expected. The adaptive mesh refinement's growth limitation will therefore 
+                      use 14314 instead of 3608 mesh cells as a reference.
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:42   The wavelength based mesh refinement has been applied to 0.2% of all mesh edges.
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:42   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:42   Adaptive mesh refinement pass 2
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:45     Matrix setup time        :	0 s
+                        Solver setup             :	2 s
+                        Degrees of freedom       :	76376
+                        Number of mesh cells     :	11826
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	5.11704e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:45     Delta calculation        
+2025-04-13 23:49:45     All S-Parameters         :	0.0313579
+2025-04-13 23:49:45   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:45   The input reflection seems to be large at 32 GHz, Theta: 0, Phi: 0. The adaptive mesh refinement at this sample will be 
+                      stopped. A new mesh adaptation frequency has been added at 26 GHz.  More...
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:45   *** Warning ***
+
+2025-04-13 23:49:45   At least one propagating Floquet mode is not considered at port Zmin. Please increase the number of modes at this port. 
+                      More...
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:45   *** Warning ***
+
+2025-04-13 23:49:45   At least one propagating Floquet mode is not considered at port Zmax. Please increase the number of modes at this port. 
+                      More...
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:45     Total time               :	16 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:45   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:45     Calculation 2 of 2 (Frequency: 26 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:45   Adaptive mesh refinement pass 1
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:47     Matrix setup time        :	0 s
+                        Solver setup             :	1 s
+                        Degrees of freedom       :	76376
+                        Number of mesh cells     :	11826
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	4.97736e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:48   For some elements the curvature had to be slightly reduced to maintain the quality of the mesh. More...
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:49   Adaptive mesh refinement pass 2
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:52     Matrix setup time        :	0 s
+                        Solver setup             :	3 s
+                        Degrees of freedom       :	119166
+                        Number of mesh cells     :	18546
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	2.75379e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:52     Delta calculation        
+2025-04-13 23:49:52     All S-Parameters         :	0.0500072
+2025-04-13 23:49:52   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:49:54   Adaptive mesh refinement pass 3
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:01     Matrix setup time        :	0 s
+                        Solver setup             :	5 s
+                        Degrees of freedom       :	187590
+                        Number of mesh cells     :	29217
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	2.09728e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:01     Delta calculation        
+2025-04-13 23:50:01     All S-Parameters         :	0.026346
+2025-04-13 23:50:01   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:04   Adaptive mesh refinement pass 4
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:18     Matrix setup time        :	1 s
+                        Solver setup             :	12 s
+                        Degrees of freedom       :	295736
+                        Number of mesh cells     :	46114
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	3.29675e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:18     Delta calculation        
+2025-04-13 23:50:18     All S-Parameters         :	0.0236752
+2025-04-13 23:50:18   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:22   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:23   Adaptive mesh refinement pass 5
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:49     Matrix setup time        :	1 s
+                        Solver setup             :	24 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	4.14237e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:50     Delta calculation        
+2025-04-13 23:50:50     All S-Parameters         :	0.0158765
+2025-04-13 23:50:50   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:50   Mesh adaptation terminated because the desired accuracy limit is reached.
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:50     Total time               :	64 s	 (= 0 h, 01 m, 04 s)
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:50   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:50:50     Calculation 1 (Frequency: 32 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:12     Matrix setup time        :	0 s
+                        Solver setup             :	20 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	4.86515e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:13     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:13   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:13     Calculation 3 (Frequency: 20 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:35     Matrix setup time        :	0 s
+                        Solver setup             :	20 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	3.7064e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:35     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:35   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:35     Calculation 4 (Frequency: 29 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:57     Matrix setup time        :	0 s
+                        Solver setup             :	20 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	4.69112e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:58     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:58   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:51:58     Calculation 5 (Frequency: 23.048 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:52:19     Matrix setup time        :	0 s
+                        Solver setup             :	20 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	2.50024e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:52:20     Total time               :	21 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:52:20   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:52:20     Calculation 6 (Frequency: 27.188 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:52:41     Matrix setup time        :	0 s
+                        Solver setup             :	20 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	3.23781e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:52:41     Total time               :	21 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:52:41   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:52:41     Calculation 7 (Frequency: 24.524 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:03     Matrix setup time        :	0 s
+                        Solver setup             :	20 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	4.57389e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:04     Total time               :	21 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:04   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:04     Calculation 8 (Frequency: 28.052 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:26     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	3.89233e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:27     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:27   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:27     Calculation 9 (Frequency: 29.888 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:49     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	5.09696e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:50     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:50   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:53:50     Calculation 10 (Frequency: 21.308 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:12     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	2.8987e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:13     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:13   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:13     Calculation 11 (Frequency: 31.508 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:35     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	6.41256e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:36     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:36   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:36     Calculation 12 (Frequency: 21.416 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:58     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	4.40591e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:58     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:58   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:54:58     Calculation 13 (Frequency: 20.984 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:55:21     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	3.64771e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:55:22     Total time               :	23 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:55:22   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:55:22     Calculation 14 (Frequency: 22.1 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:55:44     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	3.86821e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:55:45     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:55:45   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:55:45     Calculation 15 (Frequency: 31.064 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:07     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	6.29613e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:08     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:08   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:08     Calculation 16 (Frequency: 22.412 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:31     Matrix setup time        :	0 s
+                        Solver setup             :	22 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	3.55009e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:32     Total time               :	23 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:32   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:32     Calculation 17 (Frequency: 30.524 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:55     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	3.62271e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:55     Total time               :	23 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:55   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:56:55     Calculation 18 (Frequency: 29.072 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:57:18     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	1.00317e-13
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:57:19     Total time               :	23 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:57:19   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:57:19     Calculation 19 (Frequency: 26.444 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:57:41     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	3.17723e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:57:42     Total time               :	22 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:57:42   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:57:42     Calculation 20 (Frequency: 27.548 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:05     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	2.63118e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:05     Total time               :	23 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:05   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:05     Calculation 21 (Frequency: 29.396 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:28     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	5.10006e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:29     Total time               :	23 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:29   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:29     Calculation 22 (Frequency: 26.756 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:51     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	3.19864e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:52     Total time               :	23 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:52   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:58:52     Calculation 23 (Frequency: 28.508 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:59:15     Matrix setup time        :	0 s
+                        Solver setup             :	21 s
+                        Degrees of freedom       :	416480
+                        Number of mesh cells     :	64967
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	6.03815e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:59:15     Total time               :	23 s
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:59:15   
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:59:15   Finished the general purpose interpolative broadband frequency sweep:
+                      All broadband sweep convergence criteria have been satisfied after
+                      calculating 23 frequency samples:
+
+                        Broadband sweep error threshold value :  0.01 (All S-Parameters) 
+                        Number of error criterion checks      :  2 (All S-Parameters) 
+                        Minimum number of samples             :  3
+                        Number of data samples, linear        :  1001
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:59:15     Number of mesh cells     :	64967
+                        Degrees of freedom       :	414368
+                        Total Solver Time        :	588 s	 (= 0 h, 09 m, 48 s)
+                      ================================================================================
+
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:59:15     ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        21860                         9211496      9211060      
+                        Eq. system setup    7283660                       9203688      8027960      
+                        Eq. system solve    7283660                       9160084      2277332      
+                        Mesh refinement     4971988                       8969160      8167844      
+                        Solver run total    7283660                       9211500      2277332      
+
+                        Computer name       Tahsin
+                        ----------------------------------------------------------------------------
+
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:59:16   Running postprocessing.
+
+                      ------------------------------------------------------------------------------
+2025-04-13 23:59:16   Postprocessing finished.
+
+                      ------------------------------------------------------------------------------
