@@ -3,3 +3,5 @@ matplotlib>=3.8.4
 numpy>=1.24.3
 pywin32>=305.1
 sqlalchemy==2.0.39
+scikit-learn==1.6.1
+tqdm==4.67.1
