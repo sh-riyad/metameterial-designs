@@ -1,0 +1,15 @@
+FeatureKeywords:string:block:type:saved:MWSSCHEM, DELETERESULTS:M0P0, mesh::background::boolean, meshloading:problem_class_only, mesh:workflow:nru, mesh:workflow:srf2vol, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh::attributes:rstepw, mesh:workflow:cad2srf, mesh:workflow:cadsurf, acceleration:cpu:6, acceleration:cpudevices:1, solver:hf:fd:task:1, monitor:resultfilemap:load, monitor:scaling:peak, monitor:scaling:timeaverage, mesh:tet:adaptive:anisotropicedge, monitor:resultfilemap:save, solver:hf:fd:meshenhancement, la:iterative, la:precond:pdss7, la:direct, la:parallel_excitation:block, solver:hf:fd:samples:29, solver:hf:fd:sampling:linear, background:normal, boundary:expanded open:zmax, boundary:expanded open:zmin, boundary:open:ConvPML, boundary:open:isolated, boundary:unit cell:xmax, boundary:unit cell:xmin, boundary:unit cell:ymax, boundary:unit cell:ymin, lineqssolver:setting:acceleratedrestart, material:disp:eps, material:disp:modelnth, mesh:tet, mesh:tet:autocurvature, mesh:tet:curved, mesh:tet:curved:3, monitor:power:1d, solver:hf:fd, solver:hf:fd:generalpurpose:tet, solver:hf:fd:order:2, solver:hf:fd:portloss, source:floquet, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:GHz, units:Inductance:nH, units:Length:mm, units:Resistance:Ohm, units:Temperature:K, units:Time:s, units:Voltage:V, solver:pp:sparameter:sensitivityanalysis, solver:pp:sparameter:basicbranch, solver:pp:sparameter:unnorm, solver:pp:sparameter:updatebalance, lineqssolver:setting:auto, lineqssolver:setting:treecotree, mesh:tet:adaptive
+LastWorkflowState:string:tetmesh:success
+solver_hf_tet_fd/InitialFreePhysicalInMB:int:9155
+solver_hf_tet_fd/MaxResidentSizeInMB:int:2529
+solver_hf_tet_fd/MaxResidentSizeMiB:int:2391
+solver_hf_tet_fd/MinFreePhysicalInMB:int:6510
+solver_pp/InitialFreePhysicalInMB:int:8643
+solver_pp/MaxResidentSizeInMB:int:25
+solver_pp/MaxResidentSizeMiB:int:7
+solver_pp/MinFreePhysicalInMB:int:8642
+tetmesh/InitialFreePhysicalInMB:int:9215
+tetmesh/MaxResidentSizeInMB:int:54
+tetmesh/MaxResidentSizeMiB:int:32
+tetmesh/MinFreePhysicalInMB:int:9150
+---

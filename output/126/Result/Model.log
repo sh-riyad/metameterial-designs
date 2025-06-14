@@ -1,0 +1,235 @@
+2025-06-09 13:29:53   *** Warning ***
+
+                      Electric isotropic material [Copper (pure)] has a very high conductivity for
+                      the given mesh. Depending on your configuration it may be better to use a lossy
+                      metal type for this material. More...
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:53   In order to get an optimal performance, hyperthreading is ignored for parallel
+                      computations.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56   Units settings: 
+
+                        Dimensions: mm
+                        Frequency:  GHz
+                        Time:       s
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56   Boundary conditions: 
+
+                        YZsymmetry: none
+                        XZsymmetry: none
+                        XYsymmetry: none
+
+                        Xmin: unit cell
+                        Xmax: unit cell
+
+                        Ymin: unit cell
+                        Ymax: unit cell
+
+                        Zmin: expanded open
+                        Zmax: expanded open
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56   Order settings: 
+
+                        Solver order   : 2nd (constant)
+                        Curved elements: up to order 3 (automatic)
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56   An iterative solver will be used first.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56     Mesh time                :	2 s
+
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56   
+                      ================================================================================
+                      Frequency Domain Solver calculation cycle started
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56   Solver started at: 2025-06-09 13:29:56 +0600
+
+                        Module:  Frequency Domain: S-Parameter (Win 64)
+                        Version: 2024.1 Release from 2023-10-16 (change 1181985)
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56   The low frequency stabilization is not applied to periodic problems.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56     Calculation 1 of 1 (Frequency: 32 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56   The wavelength based mesh refinement has been applied to 4.8% of all mesh edges.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56   For some elements the curvature had to be reduced to maintain the quality of the mesh. More...
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:29:56   Adaptive mesh refinement pass 1
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:04   *** Warning ***
+
+2025-06-09 13:30:04   Detected possible stagnation of the iterative solver (4.262334e-02 after 250 iterations.)
+                      Please consider aborting the solver run, and check your simulation setup.  More...
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:12   *** Warning ***
+
+2025-06-09 13:30:12   The solver stopped because the maximum number of iterations (500, used for automatic solver choice) has been reached.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:12   Solving again, but with the direct solver. Please consider forcing the direct solver in the solver special settings, and
+                      check your simulation setup (for instance source and material definitions.)
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:12   Low memory detected! The solver uses hard disk space to store data. This might reduce solver performance.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:14   *** Warning ***
+
+2025-06-09 13:30:14   Low memory: Only 808.09 MB of 7.91 GB available.
+
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:15     Matrix setup time        :	0 s
+                        Solver setup             :	2 s
+                        Degrees of freedom       :	35458
+                        Number of mesh cells     :	5399
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	8.4739e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:15   26% of all mesh edges seem to be longer than expected. The adaptive mesh refinement's growth limitation will therefore 
+                      use 13987 instead of 3667 mesh cells as a reference.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:15   The wavelength based mesh refinement has been applied to 0.2% of all mesh edges.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:16   For some elements the curvature had to be slightly reduced to maintain the quality of the mesh. More...
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:16   Adaptive mesh refinement pass 2
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:24     Matrix setup time        :	0 s
+                        Solver setup             :	7 s
+                        Degrees of freedom       :	68890
+                        Number of mesh cells     :	10653
+
+                        Stimulation port         :	Zmin
+                        Mode number              :	1
+                        Accuracy                 :	5.81916e-14
+                        Iterations               :	1
+                        Solver time              :	0 s
+
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:24     Delta calculation        
+2025-06-09 13:30:24     All S-Parameters         :	0.064157
+2025-06-09 13:30:24   
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:26   Adaptive mesh refinement pass 3
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:27   *** Error ***
+
+2025-06-09 13:30:27   Error during construction of pre-conditioner. Not enough memory.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:30:27   *** Error ***
+
+2025-06-09 13:30:27   Could not compute matrix factorization.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:08   Recovering the last successful solution and mesh.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09   *** Warning ***
+
+2025-06-09 13:40:09   At least one propagating Floquet mode is not considered at port Zmin. Please increase the number of modes at this port. 
+                      More...
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09   *** Warning ***
+
+2025-06-09 13:40:09   At least one propagating Floquet mode is not considered at port Zmax. Please increase the number of modes at this port. 
+                      More...
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09     Total time               :	612 s	 (= 0 h, 10 m, 12 s)
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09   
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09     Calculation 2 (Frequency: 20 GHz, Theta: 0, Phi: 0)
+
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09   *** Error ***
+
+2025-06-09 13:40:09   Error during construction of pre-conditioner. Not enough memory.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09   *** Error ***
+
+2025-06-09 13:40:09   Could not compute matrix factorization.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09     Total time               :	0 s
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09   
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09     Number of mesh cells     :	10653
+                        Degrees of freedom       :	68050
+                        Total Solver Time        :	2 s
+                      ================================================================================
+
+
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09     ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Solver start        22288                         1247976      1247156      
+                        Eq. system setup    516736                        1229636      503020       
+                        Eq. system solve    516736                        1193428      502504       
+                        Mesh refinement     516736                        1035400      983068       
+                        Solver run total    516736                        1247980      252588       
+
+                        Computer name       Tahsin
+                        ----------------------------------------------------------------------------
+
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09   Running postprocessing.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09   *** Error ***
+
+                      Error: Unable to initialize PP structure from S-Matrix information.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:09   *** Error ***
+
+                      Error while running S-parameter post processing.
+
+                      ------------------------------------------------------------------------------
+2025-06-09 13:40:10   Postprocessing finished.
+
+                      ------------------------------------------------------------------------------
