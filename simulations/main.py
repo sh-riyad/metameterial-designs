@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from Database import save_simulation_parameters
 
 
-projectName = "217"
+projectName = "235"
 
 # Create the substrate (using FR-4 (lossy) material)
 ls = 10.0   # Substrate length change 8 to 10
@@ -15,7 +15,7 @@ hs = 1.6  # Substrate height change 1.6 to 2.0
 t = 0.045 # Thickness of copper layers change to 0.035 to 0.045
 gc = 0.8 # Global Cut  Change 0.3 to 0.5 then 0.8
 
-l1 = 9.16 # outer_box length
+l1 = 9.34 # outer_box length
 w1 = 1.5 # wide change 1 to 1.2 then 1.5
 
 ed1 = 6.0 # outer circle
